@@ -49,6 +49,9 @@ export const SUBJECT_NAMES: Readonly<Record<SubjectCode, string>> = {
   cbse: 'CBSE (Board)',
   icse: 'ICSE (Board)',
   state: 'State Board',
+  kshitij: 'Hindi (Kshitij)',
+  seba: 'Assam SEBA',
+  'mathematics-instruction': 'Mathematics (Instruction)',
 };
 
 /** Subject code → canonical NCERT / CBSE book label, where one exists. */
@@ -86,10 +89,13 @@ export const SUBJECT_NCERT_LABEL: Readonly<Record<SubjectCode, string | null>> =
   cbse: 'CBSE Board Paper',
   icse: 'ICSE Board Paper',
   state: 'State Board Paper',
+  kshitij: 'NCERT Kshitij',
+  seba: 'Assam SEBA',
+  'mathematics-instruction': 'Mathematics (Instruction)',
 };
 
 /** Every subject code currently in scope. */
-export const ALL_SUBJECT_CODES = (Object.keys(SUBJECT_NAMES) as SubjectCode[]);
+export const ALL_SUBJECT_CODES = Object.keys(SUBJECT_NAMES) as SubjectCode[];
 
 export function isStandardSubject(code: string): code is SubjectCode {
   return code in SUBJECT_NAMES;
@@ -100,5 +106,5 @@ export function subjectName(code: SubjectCode): string {
 }
 
 export function subjectLabel(code: SubjectCode): string {
-  return SUBJECT_NCERT_LABEL[code] ?? null;
+  return SUBJECT_NCERT_LABEL[code] ?? code;
 }

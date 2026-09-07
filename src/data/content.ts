@@ -88,7 +88,7 @@ export const SUBJECTS: Subject[] = [
   { code: 'mathematics', name: 'Mathematics', color: '#c084fc', soft: 'rgba(192,132,252,0.16)' },
   { code: 'english', name: 'English', color: '#fb92b0', soft: 'rgba(251,146,176,0.16)' },
   { code: 'hindi', name: 'Hindi', color: '#fbbf24', soft: 'rgba(251,191,36,0.16)' },
-  { code: 'accountancy', name: 'Accountancy', color: '#f9739b', soft: 'rgba(249,115,155,0.12)' },
+  { code: 'accounts', name: 'Accountancy', color: '#f9739b', soft: 'rgba(249,115,155,0.12)' },
   { code: 'economics', name: 'Economics', color: '#facc15', soft: 'rgba(250,204,21,0.12)' },
   { code: 'business', name: 'Business Studies', color: '#38bdf8', soft: 'rgba(56,189,248,0.12)' },
   { code: 'computer', name: 'Computer Science', color: '#22d3ee', soft: 'rgba(34,211,238,0.12)' },
