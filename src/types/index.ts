@@ -19,6 +19,7 @@ export type SubjectCode =
   | 'chemistry'
   | 'biology'
   | 'mathematics'
+  | 'science'
   | 'english'
   | 'hindi'
   | 'accounts'
